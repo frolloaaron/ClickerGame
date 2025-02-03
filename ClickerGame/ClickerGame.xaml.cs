@@ -13,7 +13,7 @@ public partial class ClickerGame : ContentPage
 
 	//Upgrades
 	Upgrade Oven = new Upgrade("Low Quality Oven", "", 0, 15, 0.1);
-    Upgrade MWE = new Upgrade("Minimum Wage Employee", "", 0, 100, 1);
+    Upgrade Employee = new Upgrade("Employee", "", 0, 100, 1);
     Upgrade SecretRecipe = new Upgrade("Secret Recipe", "", 0, 750, 5);
 
     //Game Timer
@@ -73,17 +73,17 @@ public partial class ClickerGame : ContentPage
         }
     }
 
-    private void MWEButton_Clicked(object sender, EventArgs e)
+    private void EmployeeButton_Clicked(object sender, EventArgs e)
     {
-        if (cakes >= MWE.cost)
+        if (cakes >= Employee.cost)
         {
-            cakes -= MWE.cost;
-            MWE.upgradeCount += 1;
-            MWE.cost = (int)Math.Floor((MWE.cost * 1.15));
-            total_cps += MWE.cakes_per_second;
+            cakes -= Employee.cost;
+            Employee.upgradeCount += 1;
+            Employee.cost = (int)Math.Floor((Employee.cost * 1.15));
+            total_cps += Employee.cakes_per_second;
             updateCounter();
             cpsDisplay.Text = $"Current cps: {Math.Round(total_cps, 1)}";
-            MWELabel.Text = $"Cost: {MWE.cost} Cakes | Owned: {MWE.upgradeCount}";
+            EmployeeLabel.Text = $"Cost: {Employee.cost} Cakes | Owned: {Employee.upgradeCount}";
 
         }
     }

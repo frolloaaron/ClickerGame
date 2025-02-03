@@ -24,6 +24,7 @@
                 Text="Current cps: 0"
                 FontSize="10"
                 HorizontalOptions="Center"
+                TextColor="Black"
             />
             <Label
                 Margin="5"
@@ -31,6 +32,7 @@
                 Text="Cakes: 0"
                 FontSize="30"
                 HorizontalOptions="Center"
+                TextColor="Black"
             />
         </VerticalStackLayout>
 
@@ -51,23 +53,25 @@
                     x:Name="OvenLabel"
                     Text="Cost: 15 Cakes | Owned: 0"
                     VerticalOptions="Center"
+                    TextColor="Black"
                     Margin="10"
                     />
             </HorizontalStackLayout>
             
-            <HorizontalStackLayout x:Name="MWEDisplay" HorizontalOptions="Center" Margin="10">
+            <HorizontalStackLayout x:Name="EmployeeDisplay" HorizontalOptions="Center" Margin="10">
                 <Button
-                    x:Name="MWEButton"
-                    Text="Minimum Wage Employee [+1 Cakes Per Second]"
-                    Clicked="MWEButton_Clicked" 
+                    x:Name="EmployeeButton"
+                    Text="Employee [+1 Cakes Per Second]"
+                    Clicked="EmployeeButton_Clicked" 
                     BackgroundColor="MintCream"
                     TextColor="Black"
                     CornerRadius="5"
                 />
                 <Label
-                    x:Name="MWELabel"
+                    x:Name="EmployeeLabel"
                     Text="Cost: 100 Cakes | Owned: 0"
                     VerticalOptions="Center"
+                    TextColor="Black"
                     Margin="10"
                     />
             </HorizontalStackLayout>
@@ -85,6 +89,7 @@
                     x:Name="SRLabel"
                     Text="Cost: 750 Cakes | Owned: 0"
                     VerticalOptions="Center"
+                    TextColor="Black"
                     Margin="10"
                     />
             </HorizontalStackLayout>
