@@ -1,0 +1,35 @@
+﻿Cake Clicker
+
+Upgrades:
+Low Quality Oven
+Minimum-Wage Employees
+Secret Recipe
+Factory
+Dimensional Portal
+Matter Duplicator
+
+
+--- GAME FEATURES ---
+- Main Game -
+-Big cake button to press to make number go up
+-Display of current cake count
+-Store with upgrades to increase cake count
+
+- Stretch Goals -
+-Can press button with multiple keys
+-Can Buy multiple at once
+
+--- GAME STRUCTURE ---
+How are we handling display count?
+- Store amount of cakes in a double variable, set one timer, convert to integer when displayed
+
+How are we handling upgrades (buying + math)?
+- Create an Upgrade class
+	- Cakes/Second
+	- Current Cost
+	- Name
+	- Picture
+	- How many of the upgrade the user currently has
+
+
+	

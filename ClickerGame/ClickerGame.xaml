@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClickerGame.ClickerGame"
+             Title="ClickerGame">
+    <AbsoluteLayout 
+        BackgroundColor="MistyRose"        
+        >
+        <VerticalStackLayout
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.20, 0.5"
+            >
+            <ImageButton
+                x:Name="cakeButton"
+                Source="cake.png"
+                HeightRequest="400"
+                WidthRequest="400"
+                Clicked="cakeButton_Clicked"
+                BackgroundColor="MistyRose"   
+            />
+            <Label
+                Margin="5"
+                x:Name="cpsDisplay"
+                Text="Current cps: 0"
+                FontSize="10"
+                HorizontalOptions="Center"
+            />
+            <Label
+                Margin="5"
+                x:Name="cakeCounter"
+                Text="Cakes: 0"
+                FontSize="30"
+                HorizontalOptions="Center"
+            />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.8, 0.5, AutoSize, AutoSize"
+            >
+            <HorizontalStackLayout x:Name="OvenDisplay" HorizontalOptions="Center" Margin="10">
+                <Button
+                    x:Name="OvenButton"
+                    Text="Low Quality Oven [+0.1 Cakes Per Second]"
+                    Clicked="OvenButton_Clicked"
+                    BackgroundColor="MintCream"
+                    TextColor="Black"
+                    CornerRadius="5"
+                />
+                <Label
+                    x:Name="OvenLabel"
+                    Text="Cost: 15 Cakes | Owned: 0"
+                    VerticalOptions="Center"
+                    Margin="10"
+                    />
+            </HorizontalStackLayout>
+            
+            <HorizontalStackLayout x:Name="MWEDisplay" HorizontalOptions="Center" Margin="10">
+                <Button
+                    x:Name="MWEButton"
+                    Text="Minimum Wage Employee [+1 Cakes Per Second]"
+                    Clicked="MWEButton_Clicked" 
+                    BackgroundColor="MintCream"
+                    TextColor="Black"
+                    CornerRadius="5"
+                />
+                <Label
+                    x:Name="MWELabel"
+                    Text="Cost: 100 Cakes | Owned: 0"
+                    VerticalOptions="Center"
+                    Margin="10"
+                    />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout x:Name="SRDisplay" HorizontalOptions="Center" Margin="10">
+                <Button
+                    x:Name="SRButton"
+                    Text="Secret Recipe [+5 Cakes Per Second]"
+                    Clicked="SRButton_Clicked" 
+                    BackgroundColor="MintCream"
+                    TextColor="Black"
+                    CornerRadius="5"
+                />
+                <Label
+                    x:Name="SRLabel"
+                    Text="Cost: 750 Cakes | Owned: 0"
+                    VerticalOptions="Center"
+                    Margin="10"
+                    />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </AbsoluteLayout>
+</ContentPage>
