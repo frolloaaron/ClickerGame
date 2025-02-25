@@ -38,11 +38,19 @@
 
         <VerticalStackLayout
             AbsoluteLayout.LayoutFlags="PositionProportional"
-            AbsoluteLayout.LayoutBounds="0.8, 0.5, AutoSize, AutoSize"
+            AbsoluteLayout.LayoutBounds="0.9, 0.5, AutoSize, AutoSize"
             >
-            <HorizontalStackLayout x:Name="OvenDisplay" HorizontalOptions="Center" Margin="10">
+            <HorizontalStackLayout x:Name="OvenDisplay" HorizontalOptions="Start" Margin="10">
+                <Image
+                    Source="oven.png"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Background="Seashell"
+                    Margin="0, 0, 10, 0"
+                    />
                 <Button
                     x:Name="OvenButton"
+                    WidthRequest="315"
                     Text="Low Quality Oven [+0.1 Cakes Per Second]"
                     Clicked="OvenButton_Clicked"
                     BackgroundColor="MintCream"
@@ -57,10 +65,18 @@
                     Margin="10"
                     />
             </HorizontalStackLayout>
-            
-            <HorizontalStackLayout x:Name="EmployeeDisplay" HorizontalOptions="Center" Margin="10">
+
+            <HorizontalStackLayout x:Name="EmployeeDisplay" HorizontalOptions="Start" Margin="10">
+                <Image
+                    Source="chef.jpg"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Background="Seashell"
+                    Margin="0, 0, 10, 0"
+                    />
                 <Button
                     x:Name="EmployeeButton"
+                    WidthRequest="315"
                     Text="Employee [+1 Cakes Per Second]"
                     Clicked="EmployeeButton_Clicked" 
                     BackgroundColor="MintCream"
@@ -76,9 +92,17 @@
                     />
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout x:Name="SRDisplay" HorizontalOptions="Center" Margin="10">
+            <HorizontalStackLayout x:Name="SRDisplay" HorizontalOptions="Start" Margin="10">
+                <Image
+                    Source="recipe.png"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Background="Seashell"
+                    Margin="0, 0, 10, 0"
+                    />
                 <Button
                     x:Name="SRButton"
+                    WidthRequest="315"
                     Text="Secret Recipe [+5 Cakes Per Second]"
                     Clicked="SRButton_Clicked" 
                     BackgroundColor="MintCream"
@@ -88,6 +112,84 @@
                 <Label
                     x:Name="SRLabel"
                     Text="Cost: 750 Cakes | Owned: 0"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    Margin="10"
+                    />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout x:Name="FactoryDisplay" HorizontalOptions="Start" Margin="10">
+                <Image
+                    Source="factory.png"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Background="Seashell"
+                    Margin="0, 0, 10, 0"
+                    />
+                <Button
+                    x:Name="FactoryButton"
+                    WidthRequest="315"
+                    Text="Factory [+10 Cakes Per Second]"
+                    Clicked="FactoryButton_Clicked" 
+                    BackgroundColor="MintCream"
+                    TextColor="Black"
+                    CornerRadius="5"
+                />
+                <Label
+                    x:Name="FactoryLabel"
+                    Text="Cost: 2000 Cakes | Owned: 0"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    Margin="10"
+                    />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout x:Name="PortalDisplay" HorizontalOptions="Start" Margin="10">
+                <Image
+                    Source="portal.jpg"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Background="Seashell"
+                    Margin="0, 0, 10, 0"
+                    />
+                <Button
+                    x:Name="PortalButton"
+                    WidthRequest="315"
+                    Text="Dimensional Portal [+45 Cakes Per Second]"
+                    Clicked="PortalButton_Clicked" 
+                    BackgroundColor="MintCream"
+                    TextColor="Black"
+                    CornerRadius="5"
+                />
+                <Label
+                    x:Name="PortalLabel"
+                    Text="Cost: 10000 Cakes | Owned: 0"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    Margin="10"
+                    />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout x:Name="MDDisplay" HorizontalOptions="Start" Margin="10">
+                <Image
+                    Source="duplicator.png"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Background="Seashell"
+                    Margin="0, 0, 10, 0"
+                    />
+                <Button
+                    x:Name="MDButton"
+                    WidthRequest="315"
+                    Text="Matter Duplicator [+100 Cakes Per Second]"
+                    Clicked="MDButton_Clicked" 
+                    BackgroundColor="MintCream"
+                    TextColor="Black"
+                    CornerRadius="5"
+                />
+                <Label
+                    x:Name="MDLabel"
+                    Text="Cost: 50000 Cakes | Owned: 0"
                     VerticalOptions="Center"
                     TextColor="Black"
                     Margin="10"

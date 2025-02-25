@@ -1,8 +1,13 @@
 ﻿Cake Clicker
 
 Upgrades:
-- Various upgrades to improve output
-- Progression should be fast enough to continuously make progress but not too fast to be mindless
+Low Quality Oven
+Minimum-Wage Employees
+Secret Recipe
+Factory
+Dimensional Portal
+Matter Duplicator
+
 
 --- GAME FEATURES ---
 - Main Game -
